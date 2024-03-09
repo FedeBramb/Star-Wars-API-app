@@ -1,0 +1,99 @@
+* {
+    box-sizing: border-box;
+}
+
+@font-face {
+    font-family: "Star Jedi V2";
+    src: url("https://db.onlinewebfonts.com/t/0c724f6aa457310440cf8949c615cbd7.woff")format("woff"),
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    background-image: url(source/background.jpg);
+    
+}
+
+
+
+h1 {
+    font-family: "Star Jedi V2";
+    text-align: center;
+    text-shadow: 
+    0 0 0px #ef4ab8, /* Ombra gialla centrata */
+    0 0 0px #ff38bd, /* Ombra gialla più ampia */
+    0 0 10px #ff38bd; /* Ombra gialla più ampia */
+}
+
+.search-container {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+    gap: 5px;
+}
+
+
+
+.navbar, .pages_nav {
+    text-align: center;
+}
+
+.pages_nav {
+    margin-top: 10px;
+    margin-bottom: -10px;
+}
+
+.navBtns, .page_btns {
+    width: 80px
+}
+
+.results_div {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-auto-rows: 225px;
+    gap: 10px;
+    
+    width: 80%;
+    min-height: 460px;
+    margin: 30px auto auto auto;
+    color: whitesmoke;
+    line-height: 0.9;
+    height: 80%; /* Modifica l'unità da 100hv a 100vh */
+    background-color: rgba(0, 0, 69, 0.5);
+    box-shadow: 
+        0 0 0px #ef4ab8, /* Ombra gialla centrata */
+        0 0 0px #ff38bd, /* Ombra gialla più ampia */
+        0 0 10px #ff38bd; /* Ombra gialla più ampia */
+}
+
+@media only screen and (max-width: 1258px) {
+    .results_div {
+        grid-template-columns: 1fr;
+        min-width: 360px;
+        margin-bottom: 20px; 
+    }
+}
+
+.scheda {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    box-shadow: 
+        0 0 0px #ef4ab8, /* Ombra gialla centrata */
+        0 0 0px #ff38bd, /* Ombra gialla più ampia */
+        0 0 10px #ff38bd; /* Ombra gialla più ampia */
+}
+
+.load-button-container {
+    margin: auto;
+    padding: auto;
+
+}
+
+.load-button {
+    width: 125px;  /* Imposta la larghezza desiderata */
+    height: 40px;  /* Imposta l'altezza desiderata */
+    font-size: 16px;  /* Imposta la dimensione del testo del pulsante */
+}

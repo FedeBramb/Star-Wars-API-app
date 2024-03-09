@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="">
+  <link rel="stylesheet" type="text/css" href="styles.css">
+  <title>Star Wars Api</title>
+</head>
+<body>
+  <header>
+    <h1>Star Wars Api</h1>
+  </header>
+  <main>
+    <div class="search-container">
+      <label for="category"></label>
+      <select id="category">
+          <option value="films">Films</option>
+          <option value="people">People</option>
+          <option value="planets">Planets</option>
+          <option value="species">Species</option>
+          <option value="starships">Starships</option>
+          <option value="vehicles">Vehicles</option>
+      </select>
+      <input type="text" id="search-input" placeholder="Search...">
+      <button id="search-btn" onclick="cerca()">Search</button>
+    </div>
+    <nav id="main_nav" class="navbar">
+        <button id="films_btn" class="navBtns" onclick="fetchData('films')">Films</button>
+        <button id="people_btn" class="navBtns" onclick="fetchData('people')">People</button>
+        <button id="planets_btn" class="navBtns" onclick="fetchData('planets')">Planets</button>
+        <button id="species_btn" class="navBtns" onclick="fetchData('species')">Species</button>
+        <button id="starships_btn" class="navBtns" onclick="fetchData('starships')">Starships</button>
+        <button id="veichles_btn" class="navBtns" onclick="fetchData('vehicles')">Veichles</button>
+    </nav>
+    <nav class="pages_nav">
+      <button id="back-btn" class="page_btns">Back</button>
+      <button id="next-btn" class="page_btns">Next</button>
+    </nav>
+    <div id="results" class="results_div">
+        
+    </div>
+  </main>
+  <script src="scripts.js"></script>
+</body>
+</html>
